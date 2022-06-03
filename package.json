@@ -1,0 +1,32 @@
+{
+  "name": "car-web-application",
+  "version": "1.0.0",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "bin/www",
+    "develop": "nodemon -q bin/www",
+    "db:create": "./node_modules/.bin/sequelize-cli db:create",
+    "db:drop": "./node_modules/.bin/sequelize-cli db:drop",
+    "db:migrate": "./node_modules/.bin/sequelize-cli db:migrate",
+    "db:rollback": "./node_modules/.bin/sequelize-cli db:migrate:undo",
+    "db:seed": "./node_modules/.bin/sequelize-cli db:seed:all",
+    "build": "npm run db:migrate"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16",
+    "pg": "^8.7.3",
+    "sequelize": "^6.19.2",
+    "sequelize-cli": "^6.4.1",
+    "sessionstorage": "^0.1.0",
+    "swagger-ui-express": "^4.4.0",
+    "yamljs": "^0.3.0"
+  }
+}
