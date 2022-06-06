@@ -10,7 +10,7 @@
     "db:migrate": "./node_modules/.bin/sequelize-cli db:migrate",
     "db:rollback": "./node_modules/.bin/sequelize-cli db:migrate:undo",
     "db:seed": "./node_modules/.bin/sequelize-cli db:seed:all",
-    "build": "npm run db:migrate && npm run db:seed"
+    "build": "npm run db:migrate"
   },
   "license": "MIT",
   "dependencies": {
